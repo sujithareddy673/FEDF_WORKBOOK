@@ -1,0 +1,70 @@
+/* --- Basic Styles --- */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding-top: 60px; /* Prevents content from hiding behind the fixed navbar */
+}
+
+/* --- Task 2: Fixed Navigation Bar --- */
+.navbar {
+    position: fixed; /* Pins the navbar to the top */
+    top: 0;
+    width: 100%;
+    background-color: #8B4513; /* Brown */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    height: 60px;
+    box-sizing: border-box; /* Ensures padding is included in the height */
+    z-index: 1000;
+}
+.nav-logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+/* --- Task 3: Animated Slideshow --- */
+.slideshow-container {
+    position: relative;
+    height: 60vh;
+    overflow: hidden;
+}
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    animation: fadeEffect 12s infinite; /* 12s total duration */
+}
+.slide:nth-child(2) { animation-delay: 4s; } /* Starts after the first slide fades */
+.slide:nth-child(3) { animation-delay: 8s; } /* Starts after the second slide fades */
+
+@keyframes fadeEffect {
+    0% { opacity: 0; }
+    25% { opacity: 1; }
+    33% { opacity: 1; }
+    58% { opacity: 0; }
+    100% { opacity: 0; }
+}
+.slideshow-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+}
+
+/* --- Other content --- */
+.content-section { padding: 20px; text-align: center; }
+footer { text-align: center; padding: 20px; background-color: #3d2b1f; color: white; }
+
+/* --- Task 4: Responsive Design --- */
+@media (max-width: 768px) {
+    .slideshow-text h1 { font-size: 1.8em; }
+    .nav-logo { font-size: 1.2em; }
+}
