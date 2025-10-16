@@ -1,0 +1,45 @@
+# --- My Git Commands for Exercise 2 ---
+
+# 1. Create the exercise directory
+mkdir EXERCISE_2
+
+# 2. Add and commit the base index.html file for this exercise
+git add EXERCISE_2/
+git commit -m "Set up base file for Exercise 2"
+
+# 3. Create and switch to the first feature branch
+git checkout -b about-feature
+
+# 4. Add and commit the 'about' feature
+git add EXERCISE_2/index.html
+git commit -m "Feat: Add about section for Ex2"
+
+# 5. Switch back to main
+git checkout main
+
+# 6. Create and switch to the second feature branch
+git checkout -b contact-feature
+
+# 7. Add and commit the 'contact' feature
+git add EXERCISE_2/index.html
+git commit -m "Feat: Add contact form for Ex2"
+
+# 8. Switch back to main to begin merging
+git checkout main
+
+# 9. Merge the first feature branch
+git merge about-feature
+
+# 10. Merge the second feature branch (this will cause a conflict)
+git merge contact-feature
+
+# 11. After resolving the conflict manually, add and commit the merge
+git add EXERCISE_2/index.html
+git commit
+
+# 12. Add the commands.txt file and commit it
+git add EXERCISE_2/commands.txt
+git commit -m "Doc: Add command list for Exercise 2"
+
+# 13. Push all new commits to GitHub
+git push origin main
