@@ -1,0 +1,22 @@
+# --- My Git Commands for Exercise 5 ---
+
+# 1. Create the exercise directory
+mkdir EXERCISE_5
+
+# 2. Create the HTML, CSS, and JavaScript files
+touch EXERCISE_5/index.html EXERCISE_5/style.css EXERCISE_5/script.js
+
+# 3. Add and commit the base file structure
+git add EXERCISE_5/
+git commit -m "Set up base files for Exercise 5"
+
+# 4. Add and commit the completed form validation project
+git add EXERCISE_5/
+git commit -m "Feat: Build form with real-time JS validation for Ex5"
+
+# 5. Add and commit the command documentation
+git add EXERCISE_5/commands.txt
+git commit -m "Doc: Add command list for Exercise 5"
+
+# 6. Push all new commits to GitHub
+git push origin main
