@@ -1,0 +1,22 @@
+# --- My Git Commands for Exercise 7 ---
+
+# 1. Create the exercise directory
+mkdir EXERCISE_7
+
+# 2. Create the HTML, CSS, JSON, and JavaScript files
+touch EXERCISE_7/index.html EXERCISE_7/style.css EXERCISE_7/books.json EXERCISE_7/main.js EXERCISE_7/cart.js
+
+# 3. Add and commit the base file structure
+git add EXERCISE_7/
+git commit -m "Set up base files for Exercise 7"
+
+# 4. Add and commit the completed bookstore app project
+git add EXERCISE_7/
+git commit -m "Feat: Build modular bookstore app with JSON for Ex7"
+
+# 5. Add and commit the command documentation
+git add EXERCISE_7/commands.txt
+git commit -m "Doc: Add command list for Exercise 7"
+
+# 6. Push all new commits to GitHub
+git push origin main
