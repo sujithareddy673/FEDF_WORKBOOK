@@ -1,0 +1,38 @@
+# --- My Git Commands for Exercise 3 ---
+
+# 1. Create the exercise directory
+mkdir EXERCISE_3
+
+# 2. Create the empty CSS file
+touch EXERCISE_3/style.css
+
+# 3. Add and commit the base files for the exercise
+git add EXERCISE_3/
+git commit -m "Set up base files for Exercise 3"
+
+# 4. Add and commit the responsive design enhancements
+git add EXERCISE_3/
+git commit -m "Feat: Implement responsive design for Ex3"
+
+# --- History Exploration Commands ---
+
+# 5. Show differences in the working directory (after a temp change)
+git diff EXERCISE_3/index.html
+
+# 6. Discard changes in the working directory
+git checkout -- EXERCISE_3/index.html
+
+# 7. Create a temporary commit to demonstrate 'reset'
+echo "temporary file" > EXERCISE_3/temp.txt
+git add EXERCISE_3/temp.txt
+git commit -m "Temp commit to be reset"
+
+# 8. Reset the last commit, removing it from history
+git reset --hard HEAD~1
+
+# 9. Add the final documentation file and commit it
+git add EXERCISE_3/commands.txt
+git commit -m "Doc: Add command list for Exercise 3"
+
+# 10. Push all new commits to GitHub
+git push origin main

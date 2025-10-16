@@ -1,0 +1,25 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    text-align: center;
+}
+
+.responsive-image {
+    max-width: 100%; /* This is the key to responsive images */
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Media Query for mobile screens */
+@media (max-width: 600px) {
+    body {
+        background-color: #eaf2f8; /* Light blue background on mobile */
+    }
+
+    h1 {
+        font-size: 1.8em;
+        color: #2c3e50;
+    }
+}
