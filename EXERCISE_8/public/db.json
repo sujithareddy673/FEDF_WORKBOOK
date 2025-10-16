@@ -1,0 +1,5 @@
+[
+  { "id": 1, "text": "Learn React Hooks", "completed": true },
+  { "id": 2, "text": "Style with Tailwind CSS", "completed": false },
+  { "id": 3, "text": "Build a To-Do App", "completed": false }
+]
