@@ -1,0 +1,27 @@
+/* Basic styling for the page */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 20px;
+}
+
+/* This class makes the image responsive */
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+/* This is a media query for mobile devices */
+@media (max-width: 600px) {
+  body {
+    background-color: #f4f4f4; /* Light gray background on mobile */
+  }
+
+  h1 {
+    font-size: 2em; /* Slightly smaller heading on mobile */
+  }
+}
