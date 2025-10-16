@@ -1,0 +1,23 @@
+# --- My Git Commands for Exercise 1 ---
+
+# 1. Create a new directory for the exercise
+mkdir EXERCISE_1
+
+# 2. Navigate into the new directory
+cd EXERCISE_1
+
+# 3. Create the necessary files
+touch index.html
+touch commands.txt
+
+# 4. Navigate back to the project root
+cd ..
+
+# 5. Stage the new directory and all its contents
+git add EXERCISE_1/
+
+# 6. Commit the staged changes with a descriptive message
+git commit -m "Complete Exercise 1 in a dedicated folder"
+
+# 7. Push the new commit to the remote repository on GitHub
+git push origin main
