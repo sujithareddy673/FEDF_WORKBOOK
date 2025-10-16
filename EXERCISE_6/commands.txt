@@ -1,0 +1,22 @@
+# --- My Git Commands for Exercise 6 ---
+
+# 1. Create the exercise directory
+mkdir EXERCISE_6
+
+# 2. Create the HTML, CSS, and JavaScript files
+touch EXERCISE_6/index.html EXERCISE_6/style.css EXERCISE_6/script.js
+
+# 3. Add and commit the base file structure
+git add EXERCISE_6/
+git commit -m "Set up base files for Exercise 6"
+
+# 4. Add and commit the completed weather app project
+git add EXERCISE_6/
+git commit -m "Feat: Build weather app with API and localStorage for Ex6"
+
+# 5. Add and commit the command documentation
+git add EXERCISE_6/commands.txt
+git commit -m "Doc: Add command list for Exercise 6"
+
+# 6. Push all new commits to GitHub
+git push origin main
