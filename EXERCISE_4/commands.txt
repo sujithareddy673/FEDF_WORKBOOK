@@ -1,0 +1,23 @@
+# --- My Git Commands for Exercise 4 ---
+
+# 1. Create the exercise directory
+mkdir EXERCISE_4
+
+# 2. Add and commit the images for the slideshow
+git add EXERCISE_4/
+git commit -m "Set up folder and images for Exercise 4"
+
+# 3. Create the HTML and CSS files
+touch EXERCISE_4/index.html
+touch EXERCISE_4/style.css
+
+# 4. Add and commit the completed webpage code
+git add EXERCISE_4/
+git commit -m "Feat: Build responsive bakery page for Ex4"
+
+# 5. Add and commit the command documentation
+git add EXERCISE_4/commands.txt
+git commit -m "Doc: Add command list for Exercise 4"
+
+# 6. Push all new commits to GitHub
+git push origin main
